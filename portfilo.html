@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Engineer Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+ 
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Navigation Bar -->
+  <nav class="bg-blue-600 p-4 text-white">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Badsha Sheikh</h1>
+      <ul class="flex space-x-4">
+        <li><a href="#about" class="hover:text-blue-200">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-200">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-200">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-200">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="about" class="py-20 bg-blue-50">
+    <div class="container mx-auto text-center">
+      <img src= "badsha (1).jpg" alt="Picture" width="200px" height="200px">
+      <h1 class="text-4xl font-bold mt-4">Badsha Sheikh</h1>
+      <p class="text-xl mt-2">Software Engineer | 1 Year of Experience</p>
+      <p class="mt-4 max-w-2xl mx-auto">
+        Passionate about building scalable and efficient software solutions. Experienced in web development, backend systems, and cloud technologies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-16">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold">Frontend</h3>
+          <p class="mt-2">HTML, CSS, JavaScript, React, Tailwind CSS</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold">Backend</h3>
+          <p class="mt-2">Node.js, Express, Python, Django</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold">DevOps</h3>
+          <p class="mt-2">Docker, Kubernetes, AWS, CI/CD</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-blue-50">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold">E-Commerce Website</h3>
+          <p class="mt-2">Built a full-stack e-commerce platform using React and Node.js.</p>
+          <a href="ecomerce.js" class="text-blue-600 hover:underline">View Project</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold">Task Management App</h3>
+          <p class="mt-2">Developed a task management app with Django and PostgreSQL.</p>
+          <a href="#" class="text-blue-600 hover:underline">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center">Contact Me</h2>
+      <form class="max-w-lg mx-auto mt-8">
+        <div class="mb-4">
+          <label for="name" class="block text-sm font-medium">Name</label>
+          <input type="text" id="name" class="w-full p-2 border rounded-lg">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-medium">Email</label>
+          <input type="email" id="email" class="w-full p-2 border rounded-lg">
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-sm font-medium">Message</label>
+          <textarea id="message" rows="4" class="w-full p-2 border rounded-lg"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Badsha sheikh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Smooth Scrolling -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
